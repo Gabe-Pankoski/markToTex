@@ -1,4 +1,4 @@
-# mark-to-tex
+# markToTex
 
 Convert Markdown files to PDF via LaTeX.
 
