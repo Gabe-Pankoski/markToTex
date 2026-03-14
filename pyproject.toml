@@ -1,12 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "mark-to-tex"
 version = "0.1.0"
-description = "Add your description here"
+description = "Convert Markdown files to PDF via LaTeX"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "pypandoc",
 ]
 
+[tool.hatch.build.targets.wheel]
+packages = ["marktotex"]
+
 [project.scripts]
-mark-to-tex = "main:main"
+mark-to-tex = "marktotex.cli:main"
